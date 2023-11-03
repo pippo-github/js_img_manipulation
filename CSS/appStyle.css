@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(4, 4, 55);
+}
+
+.titleApp{
+    color: yellow;
+    text-align: center;
+    display: block;
+    margin: 33px 0!important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.pApp{
+    margin: 8px 3px;
+    padding: 2px;
+    color: #eee;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pApp:nth-child(3){
+    margin-bottom: 33px;
+}
+
+#main_container{
+    border: solid red 3px;
+}
+
+.container_images{
+    display: flex;
+    gap: 5px;
+}
+
+.imgLabeles{
+    margin: 7px 0;
+    font-weight: bold;
+    font-style : italic;
+}
+
+.imgLabeles:nth-child(1){
+    color: rgb(90, 238, 90);
+}
+
+
+#canvas_container > div:nth-child(1){
+    color: rgb(240, 94, 68);
+}
+
+
+.container_images > div:nth-child(1){
+    background-color: rgba(247, 162, 162, .3);
+    order: 2;
+}
+
+.container_images > div:nth-child(2){
+    background-color: rgba(130, 245, 130, .3);
+    order:1
+}
+
+.container_images > div{
+    border: solid green 3px;
+    display: inline-block;
+    width: 50%;
+    height: 350px;
+    overflow: auto;
+    padding: 5px;
+}
+.canvas_conrollers{
+    display: flex;
+    flex-direction: column;
+    margin: 11px 0;
+}
+
+.lab_control{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px;
+}
+
+
+.lab_control > span::first-letter{
+    text-transform: uppercase;
+}
+
+
+.lab_control > span{
+    min-width: 120px;
+    color: wheat;
+    text-transform: lowercase;
+}
+
+.download_controller{
+    margin: 33px 0;
+    padding: 11px;
+}
+
+
+
+/* parte 2 */
+
+
+.blk_controllers{
+    border: solid red 1px;
+    display: flex;
+}
+
+.blk_controllers > div{
+    width: 50%;
+}
+
+.canvas_conrollers{
+    border: solid mediumseagreen 1px;
+}
+
+.download_controller{
+    border: solid yellow 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dwlCtrl{
+    margin: 11px 0;
+}
+
+.dwnLbl{
+    text-align: center;
+    margin-top: 22px;
+}
+
+.btn_rst{
+    width: 100%; 
+    background-color: green; 
+    color: #eee; 
+    padding: 3px; 
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.btn_rst:hover{
+    cursor:pointer;
+}
+.dwnLbl > a {
+    padding: 3px;
+    color: red;
+    text-decoration: none;
+    text-align: center;
+}
+
+.download_controller > span{
+    color: white;
+    text-transform: uppercase;
+}
+
+#dnwLink{
+    pointer-events: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red!important;
+}
+
+#theFILE{
+    color: rgb(64, 199, 64);
+    padding: 11px;
+}
+
+
+input::file-selector-button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 12px;
+    cursor: pointer;
+}
+
+button{
+    background-color: #c9de0e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

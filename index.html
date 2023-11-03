@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+    <title>JS-Canvas, filter manipulator</title>
+    <link rel='stylesheet' href='./CSS/appStyle.css' type='text/css' />
+</head>
+<style>
+
+</style>
+<body>
+
+    <h1 class='titleApp'>
+        JS and canvas, simple image filter maipulator 
+    </h1>
+    <p class='pApp'>
+        This example must be run on web server.
+    </p>
+    <p class='pApp'>
+        Select an image and apply some filters!
+    </p>
+    <div id="main_container">
+        <div class="container_images">
+            <div id='canvas_container'>
+                <div class='imgLabeles'>Img Output File</div>
+                <canvas id="root" style="border: solid green 1px;"></canvas>
+            </div>
+            <div id='img_container'>
+                <div class='imgLabeles'>Img Input File</div>
+                <!-- <img id='imgID' src="../img_the_scream.jpg" alt=""> -->
+            </div>
+        </div>
+
+<style>
+
+</style>
+        <div class='blk_controllers' >
+            <div class="canvas_conrollers">
+                <div class='lab_control'>
+                    <span>
+                        sepia
+                    </span>
+                    <input id='range_sepia' type="range" min="0" max="1" step="0.01" value="0" style='width: 77%'>
+                </div>
+                <div class='lab_control'>
+                    <span>
+                        Blur
+                    </span>
+                    <input id='range_blur' type="range" min="0" max="223" step="1" value="0" style='width: 77%'>
+                </div>
+                <div class='lab_control'>
+                    <span>
+                        opacity
+                    </span>
+                    <input id='range_opacity' type="range" min="0" max="255" step="1" value="255"  style='width: 77%'>
+                </div>
+
+                <div class='lab_control'>
+                    <span>
+                        hue-rotation
+                    </span>
+                    <input id='range_rotation' type="range" min="0" max="360" step="1" value="0"  style='width: 77%'>
+                </div>
+
+
+                <div class='lab_control'>
+                    <button onclick='reset_filter()' class='btn_rst'> reset filter </button>
+                </div>
+
+
+
+                <div class='dwnLbl'>
+
+                <div class='dwnLbl'>
+                    <a id='dnwLink' href='#' > download </a>
+                </div>
+
+
+                <div class = 'download_controller'>
+                    <span> select the image file</span>
+                </div>
+        
+    
+                <div class='dwlCtrl'>
+                    <form  onsubmit="getFileName(event)" method="POST">
+                        <input  type="file" id="theFILE" > 
+                        <button>submit file name</button>
+                    </form>
+                </div>
+    
+            </div>
+
+
+
+        </div>
+    
+
+    </div>
+
+
+</body>
+</html>
+
+<script src="./utilities/app.js"></script>
+<script src="./eventHandlers/eventHandler.js"></script>
+<script defer src="./Utilities/utilitiesFun.js"></script>
